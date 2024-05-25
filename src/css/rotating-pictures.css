@@ -1,0 +1,18 @@
+.rotating-pictures {
+    overflow: hidden;
+}
+
+.rotation {
+    display: flex;
+    animation: rotatePictures 10s linear infinite; /* Adjust duration as needed */
+}
+
+.container img {
+    max-width: 100%;
+    height: auto;
+}
+
+@keyframes rotatePictures {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
